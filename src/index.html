@@ -11,7 +11,175 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-    <script type="text/javascript" src="./main.js"></script>
+    <form action="https://localhost:5500/" alt="post">
+      <fieldset class="box box1">
+        <legend class="head">Personal information</legend>
+        <label class="line" for="Surname">
+          Surname:
+          <input
+            type="text"
+            class="line1"
+            name="Surname"
+            id="Surname"
+            autocomplete="off"
+          >
+        </label>
+        <label class="line" for="Name">
+          Name:
+          <input
+            type="text"
+            class="line2"
+            name="Name"
+            id="Name"
+            autocomplete="off"
+          >
+        </label>
+        <label class="line" for="Age">
+          How old are you?
+          <input
+            type="number"
+            class="line3"
+            min="1"
+            max="100"
+            value="12"
+            name="Age"
+            id="Age"
+          >
+        </label>
+        <label class="line" for="DateOfBirth">
+          Full date of birth:
+          <input
+            type="date"
+            class="line4"
+            name="DateOfBirth"
+            id="DateOfBirth"
+          >
+        </label>
+        <label class="line">
+          I accept the term of the agreemant
+          <input
+            type="checkbox"
+            class="line5"
+            name="acception of terms"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="box box2">
+        <legend class="head">Registration</legend>
+        <label class="line" for="email">
+          E-mail:
+          <input
+            type="email"
+            class="line6"
+            name="Email"
+            id="email"
+            required placeholder="email@example.com"
+          >
+        </label>
+        <label class="line" for="password">
+          Password
+          <input
+            type="password"
+            class="line7"
+            name="Password"
+            id="password"
+            minlength="8"
+            maxlength="24"
+            required=""
+          >
+        </label>
+      </fieldset>
+      <fieldset class="box box3">
+        <legend class="head">An interesting fact about you!</legend>
+        <ladel class="line relLine8">
+          Do you have cats?
+          <input
+            type="radio"
+            name="LoveCats"
+            value="Yes"
+            id="line8"
+            class="line8"
+          >
+          <label for="line8">Yes</label>
+
+          <input
+            type="radio"
+            name="LoveCats"
+            value="No"
+            id="line9"
+            class="line9"
+          >
+          <label for="line9">No</label>
+        </ladel>
+        <label class="line reLin10" for="Col">
+          What is you favorite color?
+          <input
+            id="Col"
+            type="color"
+            class="line10"
+            name="FavoriteColor"
+            value="black"
+          >
+        </label>
+        <label class="line" for="timeToBed">
+          What time do you go to bed
+          <input
+            type="time"
+            class="line11"
+            name="timeToBed"
+            id="timeToBed"
+            step="2"
+          >
+        </label>
+        <label class="line" for="brand">
+          What are your favorite brand of cars?
+          <select
+            name="brand"
+            class="line12"
+            id="brand"
+            multiple
+          >
+            <option value="BMW">BMW</option>
+            <option value="Pagani">Pagani</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Bugatti">Bugatti</option>
+            <option value="Another">Another</option>
+            <option value=" " selected></option>
+          </select>
+        </label>
+        <label class="line" for="rate">
+          How do you rate our work?
+          <input
+            type="range"
+            class="line13"
+            id="rate"
+            name="workLvl"
+            max="10" min="0"
+            value="0"
+          >
+        </label>
+      </fieldset>
+      <fieldset class="box box4">
+        <legend class="head">Additional info:</legend>
+        <ladel class="line">
+          Comments:
+          <textarea
+          name="Coments"
+          class="line14"
+          cols="10"
+          rows="2"
+          ></textarea>
+        </ladel>
+        <ladel class="line">
+          Would you recomend us?
+          <select name="Recomend" class="line15" id="Recomend">
+            <option value="1" selected>Yes</option>
+            <option value="0">No</option>
+          </select>
+        </ladel>
+      </fieldset>
+      <button type="submit" class="submitButton">Submit</button>
+    </form>
   </body>
 </html>
